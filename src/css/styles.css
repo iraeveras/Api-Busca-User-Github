@@ -1,0 +1,231 @@
+.data-input {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.data-input h1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.input-group .box-input-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.input-group .box-input-checkbox label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 10px 0;
+    gap: 6px;
+}
+
+.container-input-sub-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+    width: 100%;
+}
+
+.box-group-input-number {
+    display: flex;
+    
+}
+
+.input-group-number {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    margin-right: 3px;
+}
+
+.input-sub-group {
+    display: flex;
+}
+
+.data-input button {
+    cursor: pointer;
+    background: var(--body-background);
+    border: .8px solid var(--text-white);
+    color: var(--text-white);
+    transition: opacity .3s ease;
+}
+
+.data-input button:hover {
+    opacity: .5;
+}
+
+.container-info-user {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.box-img-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-img-name h2 {
+    font-weight: 300;
+}
+
+.box-info-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-info-profile p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+
+.box-info-profile p span {
+    font-weight: 400;
+    text-align: end;
+    letter-spacing: 2px;
+}
+.img-user {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+.container-events-user h3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.font-bold-400 {
+    font-weight: 400;
+}
+
+tbody.tbody-sem-evetos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.link-repository {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 300;
+    color: hsl(0, 0%, 99%);
+    width: 100%;
+    padding: 3px;
+    transition: background-color .5s ease-in-out;
+    border-radius: 2px;
+}
+
+tbody tr td {
+    padding: 3px;
+}
+
+.link-repository:hover {
+    background-color: #fff;
+    color: black;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 820px) {
+    main {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 706px) {
+    .data-input .input-group .insert-input::placeholder {
+        font-size: 11px;
+    }
+
+    .container-info-user {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .box-img-name h2 {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .box-info-profile {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .box-info-profile p {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .data-input {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .data-input h1 {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 362px) {
+    .box-info-profile p {
+        font-size: 12px;
+    }
+}
+
+

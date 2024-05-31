@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="././src/css/reset.css">
+    <link rel="stylesheet" href="././src/css/styles.css">
+    <title>Buscador de usuário no Github</title>
+</head>
+<body>
+    <main>
+        <section class="data-input">
+            <h1>Buscar usuário no Git</h1>
+            <div class="input-group">
+                <div class="box-input-checkbox">
+                    <label for="input-checkbox">
+                        <input type="checkbox" name="input-checkbox" id="input-checkbox">
+                        Clique aqui para preencher a qtd de eventos e repositórios a ser exibido
+                    </label>
+                </div>
+                <div class="container-input-sub-group">
+                    <div class="box-group-input-number">
+                        <div class="input-group-number">
+                            <!-- <label for="input-controller-events">Qtd de eventos:</label> -->
+                            <input type="number" name="input-number" class="input-number input-number-events" id="input-number-events" disabled >
+                        </div>
+                        <div class="input-group-number">
+                            <!-- <label for="input-controller-repository">Qtd repositórios:</label> -->
+                            <input type="number" name="input-number" class="input-number input-number-events" id="input-number-repository" disabled>
+                        </div>
+                    </div>
+                    <div class="input-sub-group">
+                        <input class="insert-input" type="text" placeholder="Nome do usuário no Github...">
+                        <button type="button" class="btn" id="btn">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-info-user"></section>
+
+        <section class="container-events-user">
+            <h3>EVENTOS</h3>            
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <td class="text-center font-bold-400">EVENTO</td>
+                            <td class="text-center font-bold-400">TIPO DE EVENTO</td>
+                            <td class="text-center font-bold-400">MENSAGEM COMMITS</td>
+                        </tr>
+                        <tbody></tbody>
+                    </thead>
+                </table>            
+        </section>
+        <section class="container-repositories-user">
+            <h3>Repositórios</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td class="text-center font-bold-400">LINK DO REPOSITÓRIO</td>
+                        <td class="text-center font-bold-400">QTD FORKS</td>
+                        <td class="text-center font-bold-400">QTD ESTRELAS</td>
+                        <td class="text-center font-bold-400">QTD OBSERVADORES</td>
+                    </tr>
+                </thead>
+                <tbody class="tbody-repositories"></tbody>
+            </table>
+            <ul>
+                
+            </ul>
+        </section>
+    </main>
+    <script type="module" src="./src/index.js"></script>
+</body>
+</html>
